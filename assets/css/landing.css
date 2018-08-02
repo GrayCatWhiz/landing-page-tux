@@ -1,0 +1,85 @@
+body {
+    background-image: url("https://images.pexels.com/photos/247791/pexels-photo-247791.png?dl&fit=crop&crop=entropy&w=2604&h=1430");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Ubuntu', -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#overlay {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+}
+#main {
+    text-align: center;
+    text-shadow: #222 .05em .05em .5em;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+#showcase * {
+    text-decoration: none;
+    color : #fff;
+}
+#showcase ul {
+    list-style-type: none;
+    margin-left: -1.2em;
+}
+
+#showcase li {
+    display: inline-block;
+    height: inherit;
+    width: inherit;
+    margin: 0 .8em; 
+}
+
+#showcase a::before{
+    padding: .5em;
+    font-size: 2.5em;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    line-height: 2.2em;
+    overflow: hidden;
+}
+#showcase a:hover {
+    background-color: rgba(255,255,255,.1);
+    border-radius: 50%;
+}
+#footer {
+    text-align: center;
+    color: #eee;
+}
+
+/* Font Awesome Options */
+
+button.navbar-toggler {
+    color: #e6e6e6;
+}
+
+span.fa-heart {
+    color: tomato;
+}
+
+@media (max-width: 768px){
+    #showcase a::before {
+        padding: .5em;
+        font-size: 1.5em;
+        border: 1px solid #eee;
+        border-radius: 50%;
+        line-height: 2.2em;
+        overflow: hidden;
+    }
+}
